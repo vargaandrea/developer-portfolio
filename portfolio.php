@@ -123,7 +123,7 @@ if($counter4 != 4) {
 					<h2><a href="about.html">Motionloops</a></h2>
 					<p>Motionloops sells looping video clips for video editing, presentions and live performances. Started in 2006, the project is in constant evolution, including many features, like:
                         <ul class="list-arrow">
-                            <li>integration with Amazon EC2 (for video file storage)</li>
+                            <li>integration with Amazon S3 (for video file storage)</li>
                             <li>integration with LivePerson</li>
                             <li>integration with Echo INC payment gateway</li>
                             <li>on the fly UPS shipping rate calculator</li>
@@ -134,7 +134,7 @@ if($counter4 != 4) {
                             <li>email content creation for marketing</li>
                             <li>etc.</li>
                         </ul>
-                    Technologies: Flash (ActionScript 2), PHP, HTML, JavaScript, MySQL, Amazon EC2<br/>
+                    Technologies: Flash (ActionScript 2), PHP, HTML, JavaScript, MySQL, Amazon S3<br/>
                     Year: 2006-2011<br/>
                     <a class="button" href="portfolio/motionloops.html"><span>More</span></a>
 					<a class="button" href="http://www.motionloops.com"><span>Live preview</span></a>
@@ -154,7 +154,7 @@ if($counter4 != 4) {
                             <li>destination folder of the download is remembered throughout sessions</li>
                             <li>etc.</li>
                         </ul>
-                    Technologies: Flex 3, Flash, PHP, MySQL, Amazon EC2<br/>
+                    Technologies: Flex 3, Flash, PHP, MySQL, Amazon S3<br/>
                     Year: 2011
                     </p>
 				</div>
@@ -194,7 +194,7 @@ if($counter4 != 4) {
                             <li>destination folder of the download is remembered throughout sessions</li>
                             <li>etc.</li>
                         </ul>
-                    Technologies: Flex, Flash, PHP, MySQL, Amazon EC2<br/>
+                    Technologies: Flex, Flash, PHP, MySQL, Amazon S3<br/>
                     Year: 2011
                     </p>
 
