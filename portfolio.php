@@ -2,7 +2,7 @@
 
 include_once("includes/portfolio-data.php");
 
-$portfilioContent = '';
+$portfolioContent = '';
 
 $counter4 = 0;
 foreach($portfolioData as $portfolioCode=>$tmpPortfolioData) {
@@ -10,7 +10,8 @@ foreach($portfolioData as $portfolioCode=>$tmpPortfolioData) {
         $counter4 = 0;
     }
     if($counter4 == 0) {
-        $portfilioContent .= '<div class="full-width">';
+        //$portfolioContent .= '<table style=" page-break-inside: avoid;"><tr style=" page-break-inside: avoid; page-break-after: always;"><td >';
+        $portfolioContent .= '<div class="full-width" style="page-break-inside: avoid">';
     }
     $image1 = sprintf('
                         <img class="img-sha-217" src="images/portfolio/%s" alt="%s" />
@@ -25,8 +26,8 @@ foreach($portfolioData as $portfolioCode=>$tmpPortfolioData) {
                     <div class="one-fourth %s">
                         %s
                         <h4>%s</h4>
-                        <p> %s</br>
-                            %s</br>
+                        <p> %s<br/>
+                            %s<br/>
                             %s
                         </p>
                     </div>
@@ -42,11 +43,12 @@ foreach($portfolioData as $portfolioCode=>$tmpPortfolioData) {
     $counter4++;
     if($counter4 == 4) {
         $tmp .= '</div>';
+        //$tmp .= '</td></tr></table>';
     }
-    $portfilioContent .= $tmp;
+    $portfolioContent .= $tmp;
 }
 if($counter4 != 4) {
-    $portfilioContent .= '</div>';
+    $portfolioContent .= '</div>';
 }
 
 ?>
@@ -93,7 +95,7 @@ if($counter4 != 4) {
                     <ul>
 
 
-                        <li><a href=:portfolio.php">Portfolio full</a></li>
+                        <li><a href="portfolio.php">Portfolio full</a></li>
                         <li><a href="cv-full.html">Portfolio biggest projects</a></li>
                     </ul>
                 </li>
@@ -120,7 +122,7 @@ if($counter4 != 4) {
 					<div class="img-sha-465">
 						<a class="fancybox zoom-image" href="images/portfolio/motionloops/motionloops.jpg"><img src="images/portfolio/motionloops/motionloops_small.jpg" alt="Motionloops" /></a>
 					</div>
-					<h2><a href="about.html">Motionloops</a></h2>
+					<h2><a href="portfolio/motionloops.html">Motionloops</a></h2>
 					<p>Motionloops sells looping video clips for video editing, presentions and live performances. Started in 2006, the project is in constant evolution, including many features, like:
                         <ul class="list-arrow">
                             <li>integration with Amazon S3 (for video file storage)</li>
@@ -132,19 +134,19 @@ if($counter4 != 4) {
                             <li>administration area for complete content management and reporting (Flash and Flex based user interface),</li>
                             <li>automatic generation of complete product catalog in PDF</li>
                             <li>email content creation for marketing</li>
-                            <li>etc.</li>
                         </ul>
                     Technologies: Flash (ActionScript 2), PHP, HTML, JavaScript, MySQL, Amazon S3<br/>
-                    Year: 2006-2011<br/>
-                    <a class="button" href="portfolio/motionloops.html"><span>More</span></a>
-					<a class="button" href="http://www.motionloops.com"><span>Live preview</span></a>
+                    Year: 2006-2011</p>
+                    <p>
+                        <a class="button" href="portfolio/motionloops.html"><span>More</span></a>
+                        <a class="button" href="http://www.motionloops.com"><span>Live preview</span></a>
                     </p>
 				</div>
 				<div class="one-half last">
 					<div class="img-sha-465">
 						<a class="fancybox zoom-image" href="images/portfolio/motionloops/seqDL.jpg"><img src="images/portfolio/motionloops/seqDL_small.jpg" alt="Sequential Downloader" /></a>
 					</div>
-					<h2><a href="about.html">Sequential Downloader</a></h2>
+					<h2>Sequential Downloader</h2>
 					<p>Desktop Application (AIR - Flex 3) - allows sequential downloading of large video files for Motionloops.com clients.
                         Users can:
                         <ul class="list-arrow">
@@ -152,7 +154,6 @@ if($counter4 != 4) {
                             <li>available videos are organized in tree structure by volumes, formats and resolutions</li>
                             <li>users can easily check multiple files and download in a specified location</li>
                             <li>destination folder of the download is remembered throughout sessions</li>
-                            <li>etc.</li>
                         </ul>
                     Technologies: Flex 3, Flash, PHP, MySQL, Amazon S3<br/>
                     Year: 2011
@@ -166,7 +167,7 @@ if($counter4 != 4) {
 					<div class="img-sha-465">
 						<a class="fancybox zoom-image" href="images/portfolio/planung/planung.jpg"><img src="images/portfolio/planung/planung_small.jpg" alt="Kaderplanung" /></a>
 					</div>
-					<h2><a href="about.html">Kaderplanung</a></h2>
+					<h2><a href="portfolio/kaderplanung.html">Kaderplanung</a></h2>
 					<p>Flex based web-application for aiding soccer club managers (internal use). Features:
                         <ul class="list-arrow">
                             <li>Full management of players and trainers of the club, including contracts, salaries, expenses etc. </li>
@@ -176,33 +177,37 @@ if($counter4 != 4) {
                             <li>Data encryption </li>
                         </ul>
                     Technologies: Flex 3, PHP, MySQL<br/>
-                    Year: 2010<br/>
-					<a class="button" href="portfolio/kaderplanung.html"><span>More</span></a>
+                    Year: 2010</p>
+                    <p>
+					    <a class="button" href="portfolio/kaderplanung.html"><span>More</span></a>
                     </p>
 				</div>
+
 				<div class="one-half last">
 					<div class="img-sha-465">
-						<a class="fancybox zoom-image" href="images/portfolio/motionloops/seqDL.jpg"><img src="images/portfolio/motionloops/seqDL_small.jpg" alt="Sequential Downloader" /></a>
+						<a class="fancybox zoom-image" href="images/portfolio/virtualro/virtualro_main.jpg"><img src="images/portfolio/virtualro/virtualro_main_180.jpg" alt="Virtualro - Flexible e-commerce solution" /></a>
 					</div>
-					<h2><a href="about.html">Sequential Downloader</a></h2>
-					<p>Desktop Application (AIR - Flex 3) - allows sequential downloading of large video files for Motionloops.com clients.
-                        Users can:
+					<h2><a href="portfolio/virtualro.html">Virtualro - Flexible e-commerce</a></h2>
+					<p>Feature rich shopping cart software<br/>
+                        Features:
                         <ul class="list-arrow">
-                            <li>users can log in using their Motionloops.com account</li>
-                            <li>available videos are organized in tree structure by volumes, formats and resolutions</li>
-                            <li>users can easily check multiple files and download in a specified location</li>
-                            <li>destination folder of the download is remembered throughout sessions</li>
-                            <li>etc.</li>
+                            <li>administration area for complete management of product catalog with categories, clients, orders, etc.</li>
+                            <li>instant product sorting and filtering</li>
+                            <li>multi-lingual and multi-currency</li>
+                            <li>individual styling and coloring of the store</li>
+                            <li>integration with various payment gateways and shipping services</li>
                         </ul>
-                    Technologies: Flex, Flash, PHP, MySQL, Amazon S3<br/>
-                    Year: 2011
+                    Technologies: Flex 2 (with Cairngorm), PHP, MySQL<br/>
+                    Year: 2007-2009</p>
+                    <p>
+                    <a class="button" href="portfolio/virtualro.html"><span>More</span></a>
                     </p>
 
 				</div>
 			</div>
 
             <hr />
-            <?php print $portfilioContent; ?>
+            <?php print $portfolioContent; ?>
 
 
 

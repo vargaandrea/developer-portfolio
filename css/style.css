@@ -184,7 +184,11 @@ table td {
 .full-width {
 	width:960px;
 	overflow:hidden;
+    page-break-inside: avoid;
+    page-break-after: always;
 }
+
+
 .one-half,
 .one-third,
 .two-thirds,

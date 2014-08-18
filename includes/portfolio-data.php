@@ -49,7 +49,16 @@ $portfolioData = array(
                 "smallImage" => "christmasCard_logo.jpg",
                 "largeImage" => "christmasCard.jpg",
             ),
-
+    //2010
+    "ahc" =>
+        array(
+            "name" => "Anita Health Center",
+            "description" => "Website of the health center where I was working as aerobics trainer (in 2009-2012)",
+            "tech" => "HTMML, JavaScript",
+            "year" => 2010,
+            "smallImage" => "ahc_logo.jpg",
+            "largeImage" => "ahc.jpg",
+        ),
     //2009
     "longLegs" =>
             array(
