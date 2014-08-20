@@ -7,7 +7,21 @@
  * To change this template use File | Settings | File Templates.
  */
 
-$portfolioData = array(
+
+$portfolioData1 = array(
+    "superDataGrid" =>
+        array(
+            "name" => "Super Data Grid",
+            "description" => "Feature rich, highly customizable Flex Data Grid component",
+            "tech" => "Flex 4.5",
+            "year" => 2011,
+            "smallImage" => "performanceCurve_logo.jpg",
+            "largeImage" => "performanceCurve.jpg",
+        ),
+);
+
+
+$portfolioData2 = array(
 
 
     //2011
@@ -54,7 +68,7 @@ $portfolioData = array(
         array(
             "name" => "Anita Health Center",
             "description" => "Website of the health center where I was working as aerobics trainer (in 2009-2012)",
-            "tech" => "HTMML, JavaScript",
+            "tech" => "HTML, JavaScript",
             "year" => 2010,
             "smallImage" => "ahc_logo.jpg",
             "largeImage" => "ahc.jpg",
@@ -78,15 +92,7 @@ $portfolioData = array(
                 "smallImage" => "spartaCalendars_logo.jpg",
                 "largeImage" => "",
                 ),
-    "virtualro" =>
-            array(
-                "name" => "Virtualro",
-                "description" => "Flex based platform for e-commerce and shopping cart software",
-                "tech" => "Flex 2 (Cairngorm), PHP, MySQL",
-                "year" => "2007-2009",
-                "smallImage" => "virtualro_logo.jpg",
-                "largeImage" => "virtualro.jpg",
-                ),
+
     "partyPlanner" =>
             array(
                 "name" => "Party Banner",
@@ -492,7 +498,7 @@ $portfolioData = array(
             ),
     "pszihoteszt" =>
             array(
-                "name" => "Online psycho-tests",
+                "name" => "Online personality tests",
                 "description" => "For transindex.ro",
                 "tech" => "PHP, HTML, Photoshop",
                 "year" => 2002,

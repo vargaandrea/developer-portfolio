@@ -2,53 +2,69 @@
 
 include_once("includes/portfolio-data.php");
 
-$portfolioContent = '';
 
-$counter4 = 0;
-foreach($portfolioData as $portfolioCode=>$tmpPortfolioData) {
-    if($counter4 == 4) {
-        $counter4 = 0;
+
+$portfolioContent1 = buildPortfolioContent($portfolioData1);
+$portfolioContent2 = buildPortfolioContent($portfolioData2);
+
+
+
+
+function buildPortfolioContent($portfolioData) {
+    $portfolioContent = '';
+    if(count($portfolioData) ==0 ) {
+        return '';
     }
-    if($counter4 == 0) {
-        //$portfolioContent .= '<table style=" page-break-inside: avoid;"><tr style=" page-break-inside: avoid; page-break-after: always;"><td >';
-        $portfolioContent .= '<div class="full-width" style="page-break-inside: avoid">';
-    }
-    $image1 = sprintf('
-                        <img class="img-sha-217" src="images/portfolio/%s" alt="%s" />
-                        ', $tmpPortfolioData['smallImage'], $tmpPortfolioData['name']);
-    
-    $image2 = sprintf('
-                        <div class="img-sha-217">
-                            <a class="fancybox zoom-image" href="images/portfolio/%s" rel="gallery"><img src="images/portfolio/%s" alt="%s" /></a>
-                        </div>
-                        ', $tmpPortfolioData['largeImage'], $tmpPortfolioData['smallImage'], $tmpPortfolioData['name']);
-    $tmp = sprintf('
-                    <div class="one-fourth %s">
-                        %s
-                        <h4>%s</h4>
-                        <p> %s<br/>
-                            %s<br/>
+    $counter4 = 0;
+
+    foreach($portfolioData as $portfolioCode=>$tmpPortfolioData) {
+        if($counter4 == 4) {
+            $counter4 = 0;
+        }
+        if($counter4 == 0) {
+            //$portfolioContent .= '<table style=" page-break-inside: avoid;"><tr style=" page-break-inside: avoid; page-break-after: always;"><td >';
+            $portfolioContent .= '<div class="full-width" style="page-break-inside: avoid">';
+        }
+        $image1 = sprintf('
+                            <img class="img-sha-217" src="images/portfolio/%s" alt="%s" />
+                            ', $tmpPortfolioData['smallImage'], $tmpPortfolioData['name']);
+
+        $image2 = sprintf('
+                            <div class="img-sha-217">
+                                <a class="fancybox zoom-image" href="images/portfolio/%s" rel="gallery"><img src="images/portfolio/%s" alt="%s" /></a>
+                            </div>
+                            ', $tmpPortfolioData['largeImage'], $tmpPortfolioData['smallImage'], $tmpPortfolioData['name']);
+        $tmp = sprintf('
+                        <div class="one-fourth %s">
                             %s
-                        </p>
-                    </div>
-                    ',
-                    $counter4 == 3? 'last' : '',
-                    ($tmpPortfolioData['largeImage']=="") ? $image1 : $image2,
-                    $tmpPortfolioData['name'],
-                    $tmpPortfolioData['description'],
-                    $tmpPortfolioData['tech'],
-                    $tmpPortfolioData['year']
-                    );
+                            <h4>%s</h4>
+                            <p> %s (%s)<br/>
+                             <span class="tech">%s</span><br/>
+                            </p>
+                        </div>
+                        ',
+                        $counter4 == 3? 'last' : '',
+                        ($tmpPortfolioData['largeImage']=="") ? $image1 : $image2,
+                        $tmpPortfolioData['name'],
+                        $tmpPortfolioData['description'],
+                        $tmpPortfolioData['year'],
+                        $tmpPortfolioData['tech']
 
-    $counter4++;
-    if($counter4 == 4) {
-        $tmp .= '</div>';
-        //$tmp .= '</td></tr></table>';
+                        );
+
+        $counter4++;
+        if($counter4 == 4) {
+            $tmp .= '</div>';
+            //$tmp .= '</td></tr></table>';
+        }
+        $portfolioContent .= $tmp;
     }
-    $portfolioContent .= $tmp;
-}
-if($counter4 != 4) {
-    $portfolioContent .= '</div>';
+
+    if($counter4 != 4) {
+        $portfolioContent .= '</div>';
+    }
+
+    return $portfolioContent;
 }
 
 ?>
@@ -111,9 +127,91 @@ if($counter4 != 4) {
 			<h2>Portfolio</h2>
 			<hr />
 
-            <!-- SuperDataGrid -->
+            <?php print $portfolioContent1; ?>
 
-            <!-- Translation Tool -->
+            <div class="full-width">
+                <div class="one-half">
+                    <div class="img-sha-465">
+                        <a class="fancybox zoom-image" href="images/portfolio/talent.jpg"><img src="images/portfolio/sdg/sdg_180.jpg" alt="Talent Transformation App" /></a>
+                    </div>
+                    <h2><a href="portfolio/superDataGrid.html">FIT Talent Transformation</a></h2>
+                    <p>xxxx
+                    <ul class="list-arrow">
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                    Technologies: Flax, PHP, MySQL<br/>
+                    Year: 2012-2014</p>
+                    <p>
+                        <a class="button" href="portfolio/sdg.html"><span>More</span></a>
+                    </p>
+                </div>
+
+                <div class="one-half last">
+                    <div class="img-sha-465">
+                        <a class="fancybox zoom-image" href="images/portfolio/translator.jpg"><img src="images/portfolio/translator_logo.jpg" alt="Translator" /></a>
+                    </div>
+                    <h2>Translator</h2>
+                    <p>Web Application for aiding the translation of texts for various FIT projects.
+                    <ul class="list-arrow">
+                        <li>import and export texts from various project databases and .po files</li>
+                        <li>UI for translating texts, with filtering by projects and tags, word count</li>
+                        <li>user management for translator accounts</li>
+
+                    </ul>
+                    Technologies: Flex, PHP, MySQL<br/>
+                    Year: 2010-2011
+                    </p>
+                    <p>
+                        <a class="button" href="portfolio/ppm.html"><span>More</span></a>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="full-width">
+                <div class="one-half">
+                    <div class="img-sha-465">
+                        <a class="fancybox zoom-image" href="images/portfolio/sdg/sdg.jpg"><img src="images/portfolio/sdg/sdg_180.jpg" alt="Super Data Grid" /></a>
+                    </div>
+                    <h2><a href="portfolio/superDataGrid.html">Super Data Grid</a></h2>
+                    <p>Feature rich, highly customizable Flex Data Grid component:
+                    <ul class="list-arrow">
+                        <li>filtering  and sorting based on the datatype of the column</li>
+                        <li>selectable rows, select/deselect all</li>
+                        <li>customizable column widths and column order</li>
+                        <li>hideable columns</li>
+                        <li>saving user defined views</li>
+                        <li>fullscreen</li>
+                        <li>lazy loading through scrolling or paging</li>
+                        <li>HTML, XLSX, CSV export</li>
+                    </ul>
+                    Technologies: Flax, PHP<br/>
+                    Year: 2012</p>
+                    <p>
+                        <a class="button" href="portfolio/sdg.html"><span>More</span></a>
+                    </p>
+                </div>
+
+                <div class="one-half last">
+                    <div class="img-sha-465">
+                        <a class="fancybox zoom-image" href="images/portfolio/ppm/ppm_calibration1.jpg"><img src="images/portfolio/ppm/ppm_calibration1_180.jpg" alt="PPM" /></a>
+                    </div>
+                    <h2><a href="portfolio/ppm.html">PPM</a></h2>
+                    <p>Employee Potential and Performance Management
+                    <ul class="list-arrow">
+                        <li>administration area for managing organization structure with employees, their tasks and user accounts, performance and potential scales, reporting</li>
+                        <li>manager area for goal settings, team and self assessment, calibration, graphical representation of results</li>
+                    </ul>
+                    Technologies: Flex, PHP, MySQL<br/>
+                    Year: 2010-2011
+                    </p>
+                    <p>
+                        <a class="button" href="portfolio/ppm.html"><span>More</span></a>
+                    </p>
+                </div>
+            </div>
+
 
             <!-- Motionloops -->
 
@@ -123,7 +221,7 @@ if($counter4 != 4) {
 						<a class="fancybox zoom-image" href="images/portfolio/motionloops/motionloops.jpg"><img src="images/portfolio/motionloops/motionloops_small.jpg" alt="Motionloops" /></a>
 					</div>
 					<h2><a href="portfolio/motionloops.html">Motionloops</a></h2>
-					<p>Motionloops sells looping video clips for video editing, presentions and live performances. Started in 2006, the project is in constant evolution, including many features, like:
+					<p>Motionloops sells looping video clips for video editing, presentations and live performances. Started in 2006, the project is in constant evolution, including many features, like:
                         <ul class="list-arrow">
                             <li>integration with Amazon S3 (for video file storage)</li>
                             <li>integration with LivePerson</li>
@@ -188,7 +286,7 @@ if($counter4 != 4) {
 						<a class="fancybox zoom-image" href="images/portfolio/virtualro/virtualro_main.jpg"><img src="images/portfolio/virtualro/virtualro_main_180.jpg" alt="Virtualro - Flexible e-commerce solution" /></a>
 					</div>
 					<h2><a href="portfolio/virtualro.html">Virtualro - Flexible e-commerce</a></h2>
-					<p>Feature rich shopping cart software<br/>
+					<p>Flex based platform for e-commerce and shopping cart software<br/>
                         Features:
                         <ul class="list-arrow">
                             <li>administration area for complete management of product catalog with categories, clients, orders, etc.</li>
@@ -207,7 +305,7 @@ if($counter4 != 4) {
 			</div>
 
             <hr />
-            <?php print $portfolioContent; ?>
+            <?php print $portfolioContent2; ?>
 
 
 
