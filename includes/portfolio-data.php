@@ -9,15 +9,163 @@
 
 
 $portfolioData1 = array(
-    "superDataGrid" =>
-        array(
+
+    "fit-talent" => array(
+        "name" => "FIT Talent Management",
+        "description" => " Application offering integrated Talent Management, for both mobile devices and desktop computers",
+        "features" => array(
+            "organization design",
+            "employee goal setting and evaluation",
+            "talent calibration"
+        ),
+
+        "tech" => "Flex, PHP, MySQL",
+        "year" => '2013-2014',
+        "smallImage" => "fit-talent/fit-talent_login_180.jpg",
+        "largeImage" => "fit-talent/fit-talent_login.jpg",
+    ),
+
+    "fit-transformation" => array(
+            "name" => "FIT Transformation",
+            "description" => "Application for supporting large international organizations in transforming their workforce",
+            "features" => array(
+                        "organization design",
+                        "managing positions based on profiles and automatic generations of job postings",
+                        "management of candidates and conducting interviews",
+                        "management and conduction of various transforming processes",
+                        "various reporting possibilities",
+                        "user accounts with various roles and permission levels",
+
+                    ),
+
+            "tech" => "Flex, PHP, MySQL",
+            "year" => '2013-2014',
+            "smallImage" => "fit-transformation/fit_candidates_180.jpg",
+            "largeImage" => "fit-transformation/fit_candidates.jpg",
+        ),
+    "translator" => array(
+            "name" => "Translator",
+            "description" => "Web Application for aiding the translation of texts for various FIT projects.",
+            "features" => array(
+                        "import and export texts from various project databases and .po files",
+                        "UI for translating texts, with filtering by projects and tags, word count",
+                        "user management for translator accounts"
+
+                    ),
+
+            "tech" => "Flex, PHP, MySQL",
+            "year" => '2010-2011',
+            "smallImage" => "translator_logo.jpg",
+            "largeImage" => "translator.jpg",
+        ),
+    "sdg" => array(
             "name" => "Super Data Grid",
             "description" => "Feature rich, highly customizable Flex Data Grid component",
-            "tech" => "Flex 4.5",
-            "year" => 2011,
-            "smallImage" => "performanceCurve_logo.jpg",
-            "largeImage" => "performanceCurve.jpg",
+            "features" => array(
+                        "filtering  and sorting based on the datatype of the column",
+                        "selectable rows, select/deselect all",
+                        "customizable column widths and column order",
+                        "hideable columns",
+                        "saving user defined views",
+                        "fullscreen",
+                        "lazy loading through scrolling or paging",
+                        "HTML, XLSX, CSV export"
+
+                    ),
+
+            "tech" => "Flex, PHP, MySQL",
+            "year" => '2012',
+            "smallImage" => "sdg/sdg_180.jpg",
+            "largeImage" => "sdg/sdg.jpg",
         ),
+    "ppm" => array(
+            "name" => "PPM",
+            "description" => "Employee Potential and Performance Management",
+            "features" => array(
+                        "administration area for managing organization structure with employees, their tasks and user accounts, performance and potential scales, reporting",
+                        "manager area for goal settings, team and self assessment, calibration, graphical representation of results",
+
+                    ),
+
+            "tech" => "Flex, PHP, MySQL",
+            "year" => '2010-2011',
+            "smallImage" => "ppm/ppm_calibration1_180.jpg",
+            "largeImage" => "ppm/ppm_calibration1.jpg",
+            "more" => "ppm.html",
+        ),
+    "motionloops" => array(
+            "name" => "Motionloops",
+            "description" => "<a href=\"http://www.motionloops.com\">www.motionoops.com</a><br/>Motionloops sells looping video clips for video editing, presentations and live performances. Started in 2006, the project is in constant evolution, including many features.",
+            "features" => array(
+                        "integration with Amazon S3 (for video file storage)",
+                            "integration with LivePerson",
+                            "integration with Echo INC payment gateway",
+                            "on the fly UPS shipping rate calculator",
+                            "integration with Google Analytics",
+                            "integration with NetTracker",
+                            "administration area for complete content management and reporting (Flash and Flex based user interface),",
+                            "automatic generation of complete product catalog in PDF",
+                            "email content creation for marketing"
+
+                    ),
+
+            "tech" => " Flash (ActionScript 2), PHP, HTML, JavaScript, MySQL, Amazon S3",
+            "year" => '2006-2011',
+            "smallImage" => "motionloops/motionloops_small.jpg",
+            "largeImage" => "motionloops/motionloops.jpg",
+            "more" => "motionloops.html",
+        ),
+    "seqDL" => array(
+            "name" => "Sequential Downloader",
+            "description" => "Desktop Application (AIR - Flex 3) - allows sequential downloading of large video files for Motionloops.com clients.",
+            "features" => array(
+                            "users can log in using their Motionloops.com account",
+                            "available (free or purchased) videos are organized in tree structure by volumes, formats and resolutions",
+                            "users can easily check multiple files, download and save into a specified location",
+                            "destination folder of the download is remembered throughout sessions"
+                    ),
+
+            "tech" => "Flex 3, Flash, PHP, MySQL, Amazon S3",
+            "year" => '2010',
+            "smallImage" => "motionloops/seqDL_small.jpg",
+            "largeImage" => "motionloops/seqDL.jpg",
+        ),
+    "kaderplannung" => array(
+            "name" => "Kaderplanung",
+            "description" => "Flex based web-application for aiding soccer club managers (internal use).",
+            "features" => array(
+                            "Full management of players and trainers of the club, including contracts, salaries, expenses etc. ",
+                            "Different level of data access for different users (CFO, Sports manager, Young Team manager, Scouting )",
+                            "Possibility to simulate different play scenarios and budget scenarios ",
+                            "Reporting",
+                            "Data encryption "
+                    ),
+
+            "tech" => "Flex 3, PHP, MySQL",
+            "year" => '2010',
+            "smallImage" => "planung/planung_small.jpg",
+            "largeImage" => "planung/planung.jpg",
+            "more" => "kaderplanung.html"
+        ),
+    "virtualro" => array(
+            "name" => "Virtualro - Flexible e-commerce",
+            "description" => "Flex based platform for e-commerce and shopping cart software",
+            "features" => array(
+                            "administration area for complete management of product catalog with categories, clients, orders, etc.",
+                            "instant product sorting and filtering",
+                            "multi-lingual and multi-currency",
+                            "individual styling and coloring of the store",
+                            "integration with various payment gateways and shipping services"
+                    ),
+
+            "tech" => "Flex 2 (with Cairngorm), PHP, MySQL",
+            "year" => '2007-2009',
+            "smallImage" => "virtualro/virtualro_main_180.jpg",
+            "largeImage" => "virtualro/virtualro_main.jpg",
+            "more" => "virtualro.html"
+        )
+
+
 );
 
 
