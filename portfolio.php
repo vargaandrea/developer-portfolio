@@ -4,6 +4,8 @@ include_once("includes/portfolio-data.php");
 
 
 
+$isPrint = isset($_GET['print']);
+
 $portfolioContent1 = buildPortfolioContent($portfolioData1, 2);
 $portfolioContent2 = buildPortfolioContent($portfolioData2, 4);
 
@@ -144,28 +146,23 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
 			<div id="logo">
 				<span><a href="index.html">Andrea Varga</a></span>
 			</div>
-			
-			<ul id="nav" class="sf-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="cv-full.htm">CV</a>
-					<ul>
-
-						
-						<li><a href="cv-short.html">CV short</a></li>
-						<li><a href="cv-full.html">CV full</a></li>
-					</ul>
-				</li>
-                <li><a>Portfolio</a>
-                    <ul>
-
-
-                        <li><a href="portfolio.php">Portfolio full</a></li>
-                        <li><a href="cv-full.html">Portfolio biggest projects</a></li>
-                    </ul>
-                </li>
-				<li><a href="contact.php">Contact</a></li>
-			</ul><!--nav ends-->
+            <?php
+                if(!$isPrint) {
+            ?>
+                <ul id="nav" class="sf-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cv-full.html">CV</a>
+                        <ul>
+                            <li><a href="cv-short.html">CV short</a></li>
+                            <li><a href="cv-full.html">CV full</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="portfolio.php">Portfolio</a></li>
+                    <!--<li><a href="contact.php">Contact</a></li>-->
+                </ul><!--nav ends-->
+            <?php
+                }
+            ?>
 			
 		</div><!--header ends-->
 		
@@ -187,19 +184,16 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
 
 			
 		</div><!--content ends-->
-		
-		<div id="mini-footer"></div><!--mini-footer ends-->
-		
-		<div id="footer" class="clearfix">
-			<ul class="social right">
-				<li><a href="#"><img alt="facebook" src="images/social-icons/facebook_16.png" /></a></li>
-				<li><a href="#"><img alt="twitter" src="images/social-icons/twitter_16.png" /></a></li>
-				<li><a href="#"><img alt="flickr" src="images/social-icons/flickr_16.png" /></a></li>
-				<li><a href="#"><img alt="linkedin" src="images/social-icons/linkedin_16.png" /></a></li>
-				<li><a href="#"><img alt="facebook" src="images/social-icons/tumblr_16.png" /></a></li>
-			</ul>
-			<span>Bridge - HTML theme &copy; 2010. Created by <a href="http://themeforest.net/user/AndreaVarga">AndreaVarga</a></span>
-		</div><!--footer ends-->
+
+        <div id="mini-footer"></div><!--mini-footer ends-->
+
+        <div id="footer" class="clearfix" style="height: 100">
+            <ul class="social right" style="height: 100">
+                <li><a href="http://de.linkedin.com/pub/andrea-varga/11/5a1/55b"><img alt="linkedin" src="images/social-icons/linkedin_16.png" /></a></li>
+            </ul>
+            <span>&copy; 2014. Created by <a href="index.html">Andrea Varga</a></span>
+
+        </div><!--footer ends-->
 		
 	</div><!--wrap ends-->
 	

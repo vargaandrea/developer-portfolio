@@ -23,10 +23,11 @@ $portfolioData1 = array(
         "year" => '2013-2014',
         "smallImage" => "fit-talent/fit-talent_login_180.jpg",
         "largeImage" => "fit-talent/fit-talent_login.jpg",
+        "more" => "fit-talent.html",
     ),
 
     "fit-transformation" => array(
-            "name" => "FIT Transformation",
+            "name" => "FIT Transformation Management",
             "description" => "Application for supporting large international organizations in transforming their workforce",
             "features" => array(
                         "organization design",
@@ -42,7 +43,10 @@ $portfolioData1 = array(
             "year" => '2013-2014',
             "smallImage" => "fit-transformation/fit_candidates_180.jpg",
             "largeImage" => "fit-transformation/fit_candidates.jpg",
+            "more" => "fit-transformation.html",
         ),
+
+
     "translator" => array(
             "name" => "Translator",
             "description" => "Web Application for aiding the translation of texts for various FIT projects.",

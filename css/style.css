@@ -180,6 +180,7 @@ table td {
 	background:url(../images/bg_10.png) repeat;
 	margin-bottom:30px;
 	padding:15px 40px;
+    height: 50px;
 }
 .full-width {
 	width:960px;
@@ -187,6 +188,21 @@ table td {
     page-break-inside: avoid;
     page-break-after: always;
 }
+
+.me-width {
+    margin: 0 auto;
+    width:250px;
+    overflow:hidden;
+    text-align: center;
+}
+.me-contact-width {
+    margin: 0 auto;
+    width:160px;
+    overflow:hidden;
+    text-align: center;
+}
+
+
 
 
 .one-half,
@@ -528,6 +544,27 @@ a img {
 }
 .contact-info li.email {
 	background:url('../images/icons/email.png') no-repeat left center;
+}
+
+.contact-info-horizontal {
+    height: 200px;
+    list-style:none;
+    padding:0;
+    margin: 0 auto;
+}
+
+.contact-info-horizontal li.phone {
+    background:url('../images/icons/phone.png') no-repeat left center;
+}
+.contact-info-horizontal li.email {
+    background:url('../images/icons/email.png') no-repeat left center;
+}
+.contact-info-horizontal li {
+    height: 100px;
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+    padding-left: 35px;
 }
 /* 10.Forms, buttons
 --------------------------------------------------*/
