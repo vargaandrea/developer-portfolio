@@ -13,6 +13,8 @@ $portfolioContent2 = buildPortfolioContent($portfolioData2, 4);
 
 
 function buildPortfolioContent($portfolioData, $columnCount = 4) {
+    global $isPrint;
+
     $portfolioContent = '';
     if(count($portfolioData) ==0 ) {
         return '';
@@ -35,7 +37,15 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
 
     }
 
-    foreach($portfolioData as $portfolioCode=>$tmpPortfolioData) {
+    foreach($portfolioData as $tmpPortfolioData) {
+
+        if(isset($tmpPortfolioData['code']) and $tmpPortfolioData['code']== 'spacer') {
+            if($isPrint) {
+                $portfolioContent .= '<div class="full-width" style="height: ' . $tmpPortfolioData['height'] . 'px">&nbsp;</div>';
+            }
+            continue;
+        }
+
         if($columnCounter == $columnCount) {
             $columnCounter = 0;
         }
@@ -70,7 +80,7 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
                             ', $imageWidth, $tmpPortfolioData['largeImage'], $tmpPortfolioData['smallImage'], $tmpPortfolioData['name']);
 
         $more = '';
-        if($tmpPortfolioData["more"]) {
+        if($tmpPortfolioData["more"]  and !$isPrint) {
             $more = sprintf('<p>
                                 <a class="button" href="portfolio-details/%s"><span>More</span></a>
                             </p>',
@@ -147,7 +157,13 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
 				<span><a href="index.html">Andrea Varga</a></span>
 			</div>
             <?php
-                if(!$isPrint) {
+                if($isPrint) {
+            ?>
+                <div class="top-portfolio-link">
+                    <a href="http://andrea.narancs.net/portfolio/">http://andrea.narancs.net/portfolio/</a>
+                </div>
+            <?php
+                } else {
             ?>
                 <ul id="nav" class="sf-menu">
                     <li><a href="index.html">Home</a></li>
