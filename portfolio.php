@@ -63,11 +63,13 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
         } else {
             $title = $tmpPortfolioData['name'];
         }
+        if(count($tmpPortfolioData['features']) > 0) {
+            foreach ($tmpPortfolioData['features'] as $feature) {
+                $features .= '<li>' . $feature . '</li>';
+            }
 
-        foreach($tmpPortfolioData['features'] as $feature) {
-            $features .= '<li>'.$feature.'</li>';
+            $features = '<ul class="list-arrow">' . $features . '</ul>';
         }
-        $features = '<ul class="list-arrow">'.$features.'</ul>';
 
         $image1 = sprintf('
                             <img class="img-sha-%s" src="images/portfolio/%s" alt="%s" />
