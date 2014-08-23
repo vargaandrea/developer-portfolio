@@ -24,13 +24,13 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
     switch($columnCount) {
         case 2:
             $rowDivStyle = 'one-half';
-            $imageWidth = 217;
+            $imageWidth = 465;
 
             $titleTag = 'h2';
             break;
         case 4:
             $rowDivStyle = 'one-fourth';
-            $imageWidth = 465;
+            $imageWidth = 217;
 
             $titleTag = 'h4';
             break;
@@ -171,12 +171,7 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
             ?>
                 <ul id="nav" class="sf-menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="cv-full.html">CV</a>
-                        <ul>
-                            <li><a href="cv-short.html">CV short</a></li>
-                            <li><a href="cv-full.html">CV full</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="cv-full.html">CV</a></li>
                     <li><a href="portfolio.php">Portfolio</a></li>
                     <!--<li><a href="contact.php">Contact</a></li>-->
                 </ul><!--nav ends-->
