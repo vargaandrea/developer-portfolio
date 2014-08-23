@@ -204,7 +204,7 @@ $portfolioData2 = array(
                 ),
     array(
                 "name" => "HMP Website",
-                "description" => "Official website of Holger Manske & Partner GmbH",
+                "description" => "Official website of Holger Manske &amp; Partner GmbH",
                 "tech" => "HTML, JavaScript, Hyde Template engine, ImageMagick",
                 "year" => "2011-2014",
                 "smallImage" => "hmp_logo.jpg",
@@ -543,7 +543,7 @@ $portfolioData2 = array(
 
     //2003
     array(
-                "name" => "Plug & Graph",
+                "name" => "Plug &amp; Graph",
                 "description" => "Creating and Presenting graphs, reading input values from XML files",
                 "tech" => "Flash, XML",
                 "year" => 2003,
@@ -667,7 +667,7 @@ $portfolioData2 = array(
                 "largeImage" => "edrcProjecteRoma.jpg",
             ),
     array(
-                "name" => "Mihaly Andor & Co",
+                "name" => "Mihaly Andor &amp; Co",
                 "description" => "Presentation website of attorneys' agency",
                 "tech" => "Flash 4",
                 "year" => 2001,
