@@ -85,7 +85,7 @@ $portfolioData1 = array(
 
     array(
         "code" => "spacer",
-        "height" => 320
+        "height" => 360
         ),
 
     array(
@@ -165,7 +165,7 @@ $portfolioData1 = array(
 
     array(
         "code" => "spacer",
-        "height" => 400
+        "height" => 420
         ),
 
     array(

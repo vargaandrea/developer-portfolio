@@ -722,3 +722,9 @@ input.submit, .button {
 .tech {
     font-style: italic;
 }
+.spacer-5 {
+    height: 5px;
+}
+.port-desc {
+    padding-bottom: 10px;
+}

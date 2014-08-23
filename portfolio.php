@@ -93,10 +93,12 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
                         <div class="%s %s">
                             %s
                             <'.$titleTag.'>'.$title.'</'.$titleTag.'>
-                            <p> %s (%s)<br/>
+
+                            <div class="port-desc">%s (%s)<br/>
+                            <div class="spacer-5"> </div>
                             %s
                              <span class="tech">%s</span><br/>
-                            </p>
+                            </div>
                             '.$more.'
                         </div>
                         ',
@@ -130,7 +132,7 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
 
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
