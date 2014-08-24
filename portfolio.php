@@ -214,8 +214,8 @@ function compliesToFilter($portfolioData) {
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/colors.css" />
+	<link rel="stylesheet" type="text/css" href="css/style<?php print($isPrint?'_print':'');?>.css" />
+	<link rel="stylesheet" type="text/css" href="css/colors<?php print($isPrint?'_print':'');?>.css" />
 	<link rel="stylesheet" type="text/css" href="css/superfish.css" />
 	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.1.css" /> 
 </head>
@@ -260,16 +260,21 @@ function compliesToFilter($portfolioData) {
                 </div>
 
                 <div class="one-half last" style="text-align: right;">
-
-                    <ul class="filter-buttons">
-                        <li><a class="portfolio-filter" href="?filter=all">All</a></li>
-                        <li><a class="portfolio-filter" href="?filter=largest">Largest</a></li>
-                        <li><a class="portfolio-filter" href="?filter=flex">Flex</a></li>
-                        <li><a class="portfolio-filter" href="?filter=flash">Flash</a></li>
-                        <li><a class="portfolio-filter" href="?filter=php">PHP</a></li>
-                        <li><a class="portfolio-filter" href="?filter=games">Games</a></li>
-                        <!--<li><a class="portfolio-filter" href="?filter=favorites">My Favorites</a></li>-->
-                    </ul>
+                    <?php
+                        if(!$isPrint) {
+                            ?>
+                            <ul class="filter-buttons">
+                                <li><a class="portfolio-filter" href="?filter=all">All</a></li>
+                                <li><a class="portfolio-filter" href="?filter=largest">Largest</a></li>
+                                <li><a class="portfolio-filter" href="?filter=flex">Flex</a></li>
+                                <li><a class="portfolio-filter" href="?filter=flash">Flash</a></li>
+                                <li><a class="portfolio-filter" href="?filter=php">PHP</a></li>
+                                <li><a class="portfolio-filter" href="?filter=games">Games</a></li>
+                                <!--<li><a class="portfolio-filter" href="?filter=favorites">My Favorites</a></li>-->
+                            </ul>
+                        <?php
+                        }
+                    ?>
                 </div>
             </div>
 

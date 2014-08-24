@@ -89,7 +89,7 @@ $portfolioData1 = array(
 
     array(
         "code" => "spacer",
-        "height" => 360
+        "height" => 350
         ),
 
     array(
@@ -175,7 +175,7 @@ $portfolioData1 = array(
 
     array(
         "code" => "spacer",
-        "height" => 420
+        "height" => 440
         ),
 
     array(
@@ -312,7 +312,7 @@ $portfolioData2 = array(
             ),
     array(
         "code" => "spacer",
-        "height" => 230
+        "height" => 300
     ),
 
     array(
@@ -491,7 +491,7 @@ $portfolioData2 = array(
 
     array(
         "code" => "spacer",
-        "height" => 250
+        "height" => 400
     ),
 
     array(
@@ -667,7 +667,7 @@ $portfolioData2 = array(
 
     array(
         "code" => "spacer",
-        "height" => 200
+        "height" => 260
     ),
 
     //2001
