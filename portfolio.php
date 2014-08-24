@@ -27,7 +27,7 @@ switch($_REQUEST['filter']) {
         $pageTitle .= ' - Flash';
         break;
     case 'php':
-        $pageTitle .= ' - PHP, MySQL';
+        $pageTitle .= ' - PHP';
         break;
     case 'games':
         $pageTitle .= ' - Games';
