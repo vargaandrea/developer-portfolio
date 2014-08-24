@@ -151,14 +151,14 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
 
 
         $columnCounter++;
-        if($columnCounter == $columnCount) {
+        if(strlen($tmp)>0 and $columnCounter == $columnCount) {
             $tmp .= '</div>';
             //$tmp .= '</td></tr></table>';
         }
         $portfolioContent .= $tmp;
     }
 
-    if($columnCounter != $columnCount) {
+    if(strlen($portfolioContent) > 0 and $columnCounter != $columnCount) {
         $portfolioContent .= '</div>';
     }
 
@@ -273,14 +273,13 @@ function compliesToFilter($portfolioData) {
                 </div>
             </div>
 
-
-
             <hr/>
-            <?php print $portfolioContent1; ?>
-
-
-
-            <hr />
+            <?php
+                print $portfolioContent1;
+                if(strlen($portfolioContent1) > 0 ) {
+                    print "<hr />";
+                }
+            ?>
             <?php print $portfolioContent2; ?>
 
 
