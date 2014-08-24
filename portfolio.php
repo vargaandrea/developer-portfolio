@@ -268,7 +268,7 @@ function compliesToFilter($portfolioData) {
                         <li><a class="portfolio-filter" href="?filter=flash">Flash</a></li>
                         <li><a class="portfolio-filter" href="?filter=php">PHP</a></li>
                         <li><a class="portfolio-filter" href="?filter=games">Games</a></li>
-                        <li><a class="portfolio-filter" href="?filter=favorites">My Favorites</a></li>
+                        <!--<li><a class="portfolio-filter" href="?filter=favorites">My Favorites</a></li>-->
                     </ul>
                 </div>
             </div>
