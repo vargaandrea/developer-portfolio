@@ -44,11 +44,13 @@ $portfolioData1 = array(
             "smallImage" => "fit-transformation/fit_candidates_180.jpg",
             "largeImage" => "fit-transformation/fit_candidates.jpg",
             "more" => "fit-transformation.html",
+
+            "isLarge" => true
         ),
 
     array(
             "name" => "Translator",
-            "description" => "Web Application for aiding the translation of texts for various FIT projects.",
+            "description" => "Web Application for aiding the translation of texts for various FIT projects",
             "features" => array(
                         "import and export texts from various project databases and .po files",
                         "UI for translating texts, with filtering by projects and tags, word count",
@@ -81,6 +83,8 @@ $portfolioData1 = array(
             "year" => '2012',
             "smallImage" => "sdg/sdg_180.jpg",
             "largeImage" => "sdg/sdg.jpg",
+
+            "isFavorite" => true
         ),
 
     array(
@@ -102,11 +106,13 @@ $portfolioData1 = array(
             "smallImage" => "ppm/ppm_calibration1_180.jpg",
             "largeImage" => "ppm/ppm_calibration1.jpg",
             "more" => "ppm.html",
+
+            "isLarge" => true
         ),
 
     array(
         "name" => "Kaderplanung",
-        "description" => "Flex based web-application for aiding soccer club managers (internal use).",
+        "description" => "Flex based web-application for aiding soccer club managers (internal use)",
         "features" => array(
             "Full management of players and trainers of the club, including contracts, salaries, expenses etc. ",
             "Different level of data access for different users (CFO, Sports manager, Young Team manager, Scouting )",
@@ -119,13 +125,14 @@ $portfolioData1 = array(
         "year" => '2010',
         "smallImage" => "planung/planung_small.jpg",
         "largeImage" => "planung/planung.jpg",
-        "more" => "kaderplanung.html"
+        "more" => "kaderplanung.html",
+        "isLarge" => true
     ),
 
 
     array(
             "name" => "Motionloops",
-            "description" => "<a href=\"http://www.motionloops.com\">www.motionoops.com</a><br/>Motionloops sells looping video clips for video editing, presentations and live performances. Started in 2006, the project is in constant evolution, including many features.",
+            "description" => "<a href=\"http://www.motionloops.com\">www.motionloops.com</a><br/>Motionloops sells looping video clips for video editing, presentations and live performances. Started in 2006, the project is in constant evolution, including many features",
             "features" => array(
                         "integration with Amazon S3 (for video file storage)",
                             "integration with LivePerson",
@@ -144,11 +151,13 @@ $portfolioData1 = array(
             "smallImage" => "motionloops/motionloops_small.jpg",
             "largeImage" => "motionloops/motionloops.jpg",
             "more" => "motionloops.html",
+            "isLarge" => true,
+            "isFavorite" => true
         ),
 
     array(
             "name" => "Sequential Downloader",
-            "description" => "Desktop Application (AIR - Flex 3) - allows sequential downloading of large video files for Motionloops.com clients.",
+            "description" => "Desktop Application (AIR - Flex 3) - allows sequential downloading of large video files for Motionloops.com clients",
             "features" => array(
                             "users can log in using their Motionloops.com account",
                             "available (free or purchased) videos are organized in tree structure by volumes, formats and resolutions",
@@ -156,10 +165,11 @@ $portfolioData1 = array(
                             "destination folder of the download is remembered throughout sessions"
                     ),
 
-            "tech" => "Flex 3, Flash, PHP, MySQL, Amazon S3",
+            "tech" => "Flex 3, PHP, MySQL, Amazon S3",
             "year" => '2010',
             "smallImage" => "motionloops/seqDL_small.jpg",
             "largeImage" => "motionloops/seqDL.jpg",
+            "isFavorite" => true
         ),
 
 
@@ -183,7 +193,8 @@ $portfolioData1 = array(
             "year" => '2007-2009',
             "smallImage" => "virtualro/virtualro_main_180.jpg",
             "largeImage" => "virtualro/virtualro_main.jpg",
-            "more" => "virtualro.html"
+            "more" => "virtualro.html",
+            "isLarge" => true
         )
 
 
@@ -227,6 +238,7 @@ $portfolioData2 = array(
                 "year" => 2011,
                 "smallImage" => "christmasCard_logo.jpg",
                 "largeImage" => "christmasCard.jpg",
+                "isFavorite" => true
             ),
     array(
             "name" => "Anita Health Center",
@@ -283,7 +295,7 @@ $portfolioData2 = array(
             ),
     array(
                 "name" => "9 Months in Style",
-                "description" => "Clothing store for pregnant woman",
+                "description" => "Clothing store for pregnant women",
                 "tech" => "Flash 6, HTML, PHP, MySQL",
                 "year" => 2006,
                 "smallImage" => "9months_logo.jpg",
@@ -352,14 +364,16 @@ $portfolioData2 = array(
                 "year" => 2005,
                 "smallImage" => "gameKongChase_logo.jpg",
                 "largeImage" => "gameKongChase.jpg",
+                "isGame" => true
             ),
     array(
                 "name" => "Trap Door",
-                "description" => "Trap Door",
+                "description" => "Game",
                 "tech" => "Flash 5",
                 "year" => 2005,
                 "smallImage" => "gameTrapDoor_logo.jpg",
                 "largeImage" => "gameTrapDoor.jpg",
+                "isGame" => true
             ),
 
     array(
@@ -369,6 +383,7 @@ $portfolioData2 = array(
                 "year" => 2005,
                 "smallImage" => "gameCrazyCatapult_logo.jpg",
                 "largeImage" => "gameCrazyCatapult.jpg",
+                "isGame" => true
             ),
     array(
                 "name" => "Blow Pipe",
@@ -377,6 +392,7 @@ $portfolioData2 = array(
                 "year" => 2005,
                 "smallImage" => "gameBlowpipe_logo.jpg",
                 "largeImage" => "gameBlowpipe.jpg",
+                "isGame" => true
             ),
     array(
                 "name" => "Robin Game",
@@ -385,10 +401,11 @@ $portfolioData2 = array(
                 "year" => 2005,
                 "smallImage" => "gameRobin_logo.jpg",
                 "largeImage" => "gameRobin.jpg",
+                "isGame" => true
             ),
     array(
                 "name" => "Deskgifts",
-                "description" => "Online store for gidt items",
+                "description" => "Online store for gift items",
                 "tech" => "PHP, HTML, MySQL, osCommerce",
                 "year" => 2005,
                 "smallImage" => "deskgifts_logo.jpg",
@@ -436,6 +453,7 @@ $portfolioData2 = array(
                 "year" => 2005,
                 "smallImage" => "pixels_logo.jpg",
                 "largeImage" => "pixels.jpg",
+                "isFavorite" => true
             ),
     array(
                 "name" => "Rapt in Maille",
@@ -523,6 +541,7 @@ $portfolioData2 = array(
                 "year" => 2004,
                 "smallImage" => "gameTrivia_logo.jpg",
                 "largeImage" => "gameTrivia.jpg",
+                "isGame" => true
             ),
     array(
                 "name" => "Wheel of Fortune",
@@ -531,6 +550,7 @@ $portfolioData2 = array(
                 "year" => 2004,
                 "smallImage" => "gameWOF_logo.jpg",
                 "largeImage" => "gameWOF.jpg",
+                "isGame" => true
             ),
     array(
                 "name" => "Prem-I-Air",
@@ -549,6 +569,7 @@ $portfolioData2 = array(
                 "year" => 2003,
                 "smallImage" => "plugAndGraph_logo.jpg",
                 "largeImage" => "plugAndGraph.jpg",
+                "isFavorite" => true
             ),
     array(
                 "name" => "Pig Brother",
@@ -627,7 +648,7 @@ $portfolioData2 = array(
             ),
     array(
                 "name" => "Online personality tests",
-                "description" => "For transindex.ro",
+                "description" => "Created for transindex.ro",
                 "tech" => "PHP, HTML, Photoshop",
                 "year" => 2002,
                 "smallImage" => "pszihoteszt_logo.jpg",
@@ -659,7 +680,7 @@ $portfolioData2 = array(
                 "largeImage" => "provincia.jpg",
             ),
     array(
-                "name" => "EDRC - Projecte Roma",
+                "name" => "EDRC - Rome Projects",
                 "description" => "Presentation website",
                 "tech" => "HTML, Photoshop",
                 "year" => 2001,

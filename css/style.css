@@ -557,6 +557,8 @@ a img {
     margin: 0 auto;
 }
 
+
+
 .contact-info-horizontal li.phone {
     background:url('../images/icons/phone.png') no-repeat left center;
 }
@@ -727,4 +729,26 @@ input.submit, .button {
 }
 .port-desc {
     padding-bottom: 10px;
+}
+a.portfolio-filter {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    margin-bottom:15px;
+    background:url("../images/bg_15.png") repeat;
+    padding:5px 12px;
+    color: #AAAAAA;
+}
+
+.filter-buttons {
+    list-style:none;
+    padding:0;
+    margin:0 0 30px;
+}
+.filter-buttons li {
+    line-height:32px;
+    margin-bottom:10px;
+    font-size:12px;
+    display: inline;
+    list-style-type: none;
 }

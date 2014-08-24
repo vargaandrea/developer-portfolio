@@ -9,7 +9,36 @@ $isPrint = isset($_GET['print']);
 $portfolioContent1 = buildPortfolioContent($portfolioData1, 2);
 $portfolioContent2 = buildPortfolioContent($portfolioData2, 4);
 
+$pageTitle = "Portfolio";
 
+$filter = '';
+switch($_REQUEST['filter']) {
+    case 'all':
+        $pageTitle .= ' - All';
+        break;
+    case 'largest':
+        $filter = '';
+        $pageTitle .= ' - Largest';
+        break;
+    case 'flex':
+        $pageTitle .= ' - Flex';
+        break;
+    case 'flash':
+        $pageTitle .= ' - Flash';
+        break;
+    case 'php':
+        $pageTitle .= ' - PHP, MySQL';
+        break;
+    case 'games':
+        $pageTitle .= ' - Games';
+        break;
+    case 'favorites':
+        $pageTitle .= ' - My Favorites';
+        break;
+    default:
+        $filter = '';
+
+}
 
 
 function buildPortfolioContent($portfolioData, $columnCount = 4) {
@@ -38,6 +67,10 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
     }
 
     foreach($portfolioData as $tmpPortfolioData) {
+
+        if(!compliesToFilter($tmpPortfolioData)) {
+            continue;
+        }
 
         if(isset($tmpPortfolioData['code']) and $tmpPortfolioData['code']== 'spacer') {
             if($isPrint) {
@@ -132,6 +165,41 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
     return $portfolioContent;
 }
 
+function compliesToFilter($portfolioData) {
+    if($portfolioData["code"] == "spacer") {
+        return true;
+    }
+
+    switch($_REQUEST['filter']) {
+        case 'all':
+            return true;
+            break;
+        case 'largest':
+            return $portfolioData["isLarge"];
+            break;
+        case 'flex':
+            return strpos($portfolioData["tech"], "Flex") !== false;
+            break;
+        case 'flash':
+            return strpos($portfolioData["tech"], "Flash") !== false;
+            break;
+        case 'php':
+            return strpos($portfolioData["tech"], "PHP") !== false;
+            break;
+        case 'games':
+            return $portfolioData["isGame"];
+            break;
+        case 'favorites':
+            return $portfolioData["isFavorite"];
+            break;
+
+    }
+
+    return true;
+
+}
+
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -184,10 +252,30 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
 		<div id="mini-header"></div><!--mini-header ends-->		
 		
 		<div id="content" class="clearfix">
-		
-			<h2>Portfolio</h2>
-			<hr />
 
+
+            <div class="full-width" style="page-break-inside: avoid">
+                <div class="one-half ">
+                    <h2><?php print $pageTitle; ?></h2>
+                </div>
+
+                <div class="one-half last" style="text-align: right;">
+
+                    <ul class="filter-buttons">
+                        <li><a class="portfolio-filter" href="?filter=all">All</a></li>
+                        <li><a class="portfolio-filter" href="?filter=largest">Largest</a></li>
+                        <li><a class="portfolio-filter" href="?filter=flex">Flex</a></li>
+                        <li><a class="portfolio-filter" href="?filter=flash">Flash</a></li>
+                        <li><a class="portfolio-filter" href="?filter=php">PHP</a></li>
+                        <li><a class="portfolio-filter" href="?filter=games">Games</a></li>
+                        <li><a class="portfolio-filter" href="?filter=favorites">My Favorites</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <hr/>
             <?php print $portfolioContent1; ?>
 
 
@@ -206,7 +294,7 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
             <ul class="social right" style="height: 100">
                 <li><a href="http://de.linkedin.com/pub/andrea-varga/11/5a1/55b"><img alt="linkedin" src="images/social-icons/linkedin_16.png" /></a></li>
             </ul>
-            <span>&copy; 2014. Created by <a href="index.html">Andrea Varga</a></span>
+            <span>&copy; 2014 <a href="index.html">Andrea Varga</a></span>
 
         </div><!--footer ends-->
 		
