@@ -680,7 +680,7 @@ $portfolioData2 = array(
                 "largeImage" => "provincia.jpg",
             ),
     array(
-                "name" => "EDRC - Rome Projects",
+                "name" => "EDRC - Roma Projects",
                 "description" => "Presentation website",
                 "tech" => "HTML, Photoshop",
                 "year" => 2001,
