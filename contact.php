@@ -31,7 +31,7 @@ if(isset($_POST['submit'])) {
 
 	//If there is no error, send the email
 	if(!isset($hasError)) {
-		$emailTo = 'andi@narancs.net'; //Put your own email address here
+		$emailTo = 'andrea@narancs.net'; //Put your own email address here
 		$subject = "$name - request from portfolio.narancs.net";
 		$body = "$comments";
 		$headers = "From: $name <".$email.'>' . "\r\n" . 'Reply-to: ' . $email;
