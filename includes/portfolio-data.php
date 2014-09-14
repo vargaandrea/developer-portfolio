@@ -19,7 +19,7 @@ $portfolioData1 = array(
             "talent calibration"
         ),
 
-        "tech" => "Flex, PHP, MySQL",
+        "tech" => "JavaScript (Sencha Touch), HTML, CSS , PHP, MySQL",
         "year" => '2013-2014',
         "smallImage" => "fit-talent/fit-talent_login_180.jpg",
         "largeImage" => "fit-talent/fit-talent_login.jpg",
