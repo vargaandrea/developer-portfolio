@@ -16,7 +16,8 @@ $portfolioData1 = array(
         "features" => array(
             "organization design",
             "employee goal setting and evaluation",
-            "talent calibration"
+            "talent calibration",
+            "multiple language support"
         ),
 
         "tech" => "JavaScript (Sencha Touch), HTML, CSS , PHP, MySQL",
@@ -36,6 +37,7 @@ $portfolioData1 = array(
                         "management and conduction of various transforming processes",
                         "various reporting possibilities",
                         "user accounts with various roles and permission levels",
+                        "suport for multiple languages"
 
                     ),
 

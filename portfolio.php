@@ -224,7 +224,7 @@ function compliesToFilter($portfolioData) {
 	<div id="wrap">
 	
 		<div id="header" class="clearfix">
-		
+
 			<div id="logo">
 				<span><a href="index.html">Andrea Varga</a></span>
 			</div>
@@ -232,13 +232,14 @@ function compliesToFilter($portfolioData) {
                 if($isPrint) {
             ?>
                 <div class="top-portfolio-link">
-                    <a href="http://andrea.narancs.net/portfolio/">http://andrea.narancs.net/portfolio/</a>
+                    More details at: <a href="http://andrea.narancs.net/portfolio/">http://andrea.narancs.net/portfolio/</a>
                 </div>
             <?php
                 } else {
             ?>
                 <ul id="nav" class="sf-menu">
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="about_me.html">About me</a></li>
                     <li><a href="cv-full.html">CV</a></li>
                     <li><a href="portfolio.php">Portfolio</a></li>
                     <!--<li><a href="contact.php">Contact</a></li>-->
@@ -246,9 +247,9 @@ function compliesToFilter($portfolioData) {
             <?php
                 }
             ?>
-			
+
 		</div><!--header ends-->
-		
+
 		<div id="mini-header"></div><!--mini-header ends-->		
 		
 		<div id="content" class="clearfix">
@@ -297,6 +298,7 @@ function compliesToFilter($portfolioData) {
         <div id="footer" class="clearfix" style="height: 100">
             <ul class="social right" style="height: 100">
                 <li><a href="http://de.linkedin.com/pub/andrea-varga/11/5a1/55b"><img alt="linkedin" src="images/social-icons/linkedin_16.png" /></a></li>
+                <li><a href="https://github.com/vargaandrea"><img alt="github" src="images/social-icons/github_16.png" /></a></li>
             </ul>
             <span>&copy; 2014 <a href="index.html">Andrea Varga</a></span>
 

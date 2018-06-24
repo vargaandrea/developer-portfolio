@@ -22,7 +22,7 @@ Revision: 		1.0
 /* 1.Basic typography
 --------------------------------------------------*/
 body {
-	font:normal 11px/21px Verdana, Arial, sans-serif;
+	font:normal 14px/21px Verdana, Arial, sans-serif;
 	text-shadow:1px 1px #272727;
 }
 #logo span {

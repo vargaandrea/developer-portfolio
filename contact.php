@@ -70,7 +70,7 @@ if(isset($_POST['submit'])) {
 			
 			<ul id="nav" class="sf-menu">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
+				<li><a href="about_me.html">About</a></li>
 				<li><a href="column-layouts.html">CV</a>
 					<ul>
 
