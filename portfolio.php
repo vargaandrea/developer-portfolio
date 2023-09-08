@@ -96,12 +96,14 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
         } else {
             $title = $tmpPortfolioData['name'];
         }
-        if(count($tmpPortfolioData['features']) > 0) {
+        if(isset($tmpPortfolioData['features']) && count($tmpPortfolioData['features']) > 0) {
             foreach ($tmpPortfolioData['features'] as $feature) {
                 $features .= '<li>' . $feature . '</li>';
             }
 
             $features = '<ul class="list-arrow">' . $features . '</ul>';
+        } else {
+            $features = '';
         }
 
         $image1 = sprintf('
@@ -166,9 +168,12 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
 }
 
 function compliesToFilter($portfolioData) {
-    if($portfolioData["code"] == "spacer") {
+    if(isset($portfolioData["code"]) && $portfolioData["code"] == "spacer") {
         return true;
     }
+    if(!isset($_REQUEST['filter'])) {
+        return true;
+    }    
 
     switch($_REQUEST['filter']) {
         case 'all':
@@ -303,7 +308,7 @@ function compliesToFilter($portfolioData) {
                 <li><a href="https://www.linkedin.com/in/andrea-varga-software-engineer/"><img alt="linkedin" src="images/social-icons/linkedin_16.png" /></a></li>
                 <li><a href="https://github.com/vargaandrea"><img alt="github" src="images/social-icons/github_16.png" /></a></li>
             </ul>
-            <span>&copy; 2018 <a href="index.html">Andrea Varga</a></span>
+            <span>&copy; 2023 <a href="index.html">Andrea Varga</a></span>
 
         </div><!--footer ends-->
 		
