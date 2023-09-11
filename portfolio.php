@@ -90,12 +90,19 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
         $features = '';
 
         if($tmpPortfolioData["more"]) {
-            $title = sprintf('<a href="portfolio-details/%s">%s</a>',
-                $tmpPortfolioData["more"],
+            
+            if(substr( $tmpPortfolioData["more"], 0, 4 ) === "http") {
+                $link = $tmpPortfolioData["more"];
+            } else {
+                $link = 'portfolio-details/' . $tmpPortfolioData["more"];
+            }
+            $title = sprintf('<a href="%s">%s</a>',
+                $link,
                 $tmpPortfolioData["name"]);
         } else {
             $title = $tmpPortfolioData['name'];
         }
+        
         if(isset($tmpPortfolioData['features']) && count($tmpPortfolioData['features']) > 0) {
             foreach ($tmpPortfolioData['features'] as $feature) {
                 $features .= '<li>' . $feature . '</li>';
@@ -118,11 +125,15 @@ function buildPortfolioContent($portfolioData, $columnCount = 4) {
 
         $more = '';
         if($tmpPortfolioData["more"]  and !$isPrint) {
+            if(substr( $tmpPortfolioData["more"], 0, 4 ) === "http") {
+                $link = $tmpPortfolioData["more"];
+            } else {
+                $link = 'portfolio-details/' . $tmpPortfolioData["more"];
+            }
             $more = sprintf('<p>
-                                <a class="button" href="portfolio-details/%s"><span>More</span></a>
+                                <a class="button" href="%s"><span>More</span></a>
                             </p>',
-                $tmpPortfolioData["more"]
-
+                            $link
             );
             //<a class="button" href="http://www.motionloops.com"><span>Check out live</span></a>
         }
@@ -255,9 +266,9 @@ function compliesToFilter($portfolioData) {
 
 		</div><!--header ends-->
 
-		<div id="mini-header"  style="padding-top: 20px; padding-bottom: 0px">
+		<!-- <div id="mini-header"  style="padding-top: 20px; padding-bottom: 0px">
             <a class="button" href="downloads/Portfolio - Andrea Varga.pdf"><span>Download Portfolio (PDF)</span></a>
-        </div><!--mini-header ends-->
+        </div>--><!--mini-header ends-->
 
 		
 		<div id="content" class="clearfix">
@@ -269,8 +280,10 @@ function compliesToFilter($portfolioData) {
                 </div>
 
                 <div class="one-half last" style="text-align: right;">
+                    
                     <?php
-                        if(!$isPrint) {
+                        if(false) {
+                        //if(!$isPrint) {
                             ?>
                             <ul class="filter-buttons">
                                 <li><a class="portfolio-filter" href="?filter=all">All</a></li>
@@ -287,6 +300,56 @@ function compliesToFilter($portfolioData) {
                 </div>
             </div>
 
+
+            <div class="full-width">
+				<div class="one-fourth">
+					<img class="img-sha-300" src="images/portfolio/NTT-Logo-2.jpg" alt="300x120" width="218" />
+				</div>	
+				<div class="three-fourths last">
+                        
+                    <div class="widget">
+                        <h3>Remote Service Tool</h3>
+                        <p>My contributions to a legacy project:</p>
+                        <ul class="list-arrow">
+                            <li>Complex authorization system based on Microsoft AD group membership (Kerberos, LDAP)</li>
+                            <li>Report generation system</li>
+                            <li>Modernization of the user ínterface</li>
+                            <li>Dynamic import of data (based on json configuration) with  file upload, data validation and logging</li>
+                            <li>Further extenstion, maintenance and bug fixes of the website</li>
+                            <li>Further extentention of the .NET Windows Client application</li>
+                            <li>Firewall data synchronization - cron job that periodically reads firewall configurations through SSH, 
+                                presents changes to authorized users on a web interface and offers easy data actialization</li>
+                        </ul>
+                        <p>
+                            <span class="tech">PHP, MySQL, JavaScript, HTML</span>
+                        </p>
+                    </div>
+
+                    <div class="widget">
+                        <h3>Service Desk Assistant</h3>
+                        <p>A tool that intercepts service desk emails, stores all relevant data in a database and distributes the emails 
+                            to online and available technicians. Users can effectively open ServiceNow tickets, reply, forward and archive emais.
+                            Admins can generate Excel Statistics to measure effectiveness.
+                        </p>
+                        <p>
+                            <span class="tech">PHP - Slim, MySQL, JavaScript - Vue.js, HTML</span>
+                        </p>
+                    </div>
+
+                    <div class="widget">
+                        <h3>Ticket System Integration</h3>
+                        <p>
+                            synchronizes ticket between Customer and NTT systems <br>
+                        </p>
+                        <p>
+                            <span class="tech">PHP, MySQL, REST, SOAP, ServiceNow API</span>
+                        </p>
+                    </div>
+
+            	</div>
+			</div>
+
+            
             <hr/>
             <?php
                 print $portfolioContent1;
@@ -295,9 +358,6 @@ function compliesToFilter($portfolioData) {
                 }
             ?>
             <?php print $portfolioContent2; ?>
-
-
-
 			
 		</div><!--content ends-->
 
@@ -306,9 +366,8 @@ function compliesToFilter($portfolioData) {
         <div id="footer" class="clearfix" style="height: 100">
             <ul class="social right" style="height: 100">
                 <li><a href="https://www.linkedin.com/in/andrea-varga-software-engineer/"><img alt="linkedin" src="images/social-icons/linkedin_16.png" /></a></li>
-              
             </ul>
-            <span>&copy; 2023 <a href="index.html">Andrea Varga</a></span>
+            <span>&copy; 2018 <a href="index.html">Andrea Varga</a></span>
 
         </div><!--footer ends-->
 		

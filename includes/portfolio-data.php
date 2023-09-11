@@ -10,6 +10,25 @@
 
 $portfolioData1 = array(
 
+
+    
+
+    array(
+        "name" => "siesol.de",
+        "description" => " Presentation site and online shop of a plant based filter island for ponds (Family project)",
+        "features" => array(
+            ""
+        ),
+
+        "tech" => "WordPress, PHP, HTML, CSS",
+        "year" => '2020-2022',
+        "smallImage" => "siesol_180.jpg",
+        "largeImage" => "siesol.jpg",
+        "more" => "https://siesol.de",
+    ),
+    
+    
+
     array(
         "name" => "FIT Talent Management",
         "description" => " Application offering integrated Talent Management, for both mobile devices and desktop computers",
@@ -27,28 +46,31 @@ $portfolioData1 = array(
         "more" => "fit-talent.html",
     ),
 
+    
     array(
-            "name" => "FIT Transformation Management",
-            "description" => "Application for supporting large international organizations in transforming their workforce",
-            "features" => array(
-                        "organization design",
-                        "managing positions based on profiles and automatic generations of job postings",
-                        "management of candidates and conducting interviews",
-                        "management and conduction of various transforming processes",
-                        "various reporting possibilities",
-                        "user accounts with various roles and permission levels",
-                        "suport for multiple languages"
+        "name" => "FIT Transformation Management",
+        "description" => "Application for supporting large international organizations in transforming their workforce",
+        "features" => array(
+                    "organization design",
+                    "managing positions based on profiles and automatic generations of job postings",
+                    "management of candidates and conducting interviews",
+                    "management and conduction of various transforming processes",
+                    "various reporting possibilities",
+                    "user accounts with various roles and permission levels",
+                    "suport for multiple languages"
 
-                    ),
+                ),
 
-            "tech" => "Flex, PHP, MySQL",
-            "year" => '2013-2014',
-            "smallImage" => "fit-transformation/fit_candidates_180.jpg",
-            "largeImage" => "fit-transformation/fit_candidates.jpg",
-            "more" => "fit-transformation.html",
+        "tech" => "Flex, PHP, MySQL",
+        "year" => '2013-2014',
+        "smallImage" => "fit-transformation/fit_candidates_180.jpg",
+        "largeImage" => "fit-transformation/fit_candidates.jpg",
+        "more" => "fit-transformation.html",
 
-            "isLarge" => true
-        ),
+        "isLarge" => true
+    ),
+   
+    
 
     array(
             "name" => "Translator",
@@ -131,7 +153,7 @@ $portfolioData1 = array(
         "isLarge" => true
     ),
 
-
+   
     array(
             "name" => "Motionloops",
             "description" => "<a href=\"http://www.motionloops.com\">www.motionloops.com</a><br/>Motionloops sells looping video clips for video editing, presentations and live performances. Started in 2006, the project is in constant evolution, including many features",
@@ -204,7 +226,57 @@ $portfolioData1 = array(
 
 
 $portfolioData2 = array(
+    array(
+        "name" => "Steering a blade grinder",
+        "description" => " Stepper motor controlled through a Mobile app connected with Blootuth to Arduino UNO to steer a blade grinder, moving the blades with specific speed on a specific pattern",
+        "features" => array(
+            ""
+        ),
+        "tech" => "Arduino IDE, C, MIT App Inventor, electronics",
+        "year" => '2022',
+        "smallImage" => "grinder_80.jpg",
+        "largeImage" => "grinder.jpg"
+    ),
 
+    array(
+        "name" => "FIT Float",
+        "description" => " Mobile learning game to teach why some things float and others sink. My responsibilities were to implemnent the logic of the game in UE4 and deployment in Google and Apple stores.",
+        "features" => array(
+            ""
+        ),
+
+        "tech" => "Unreal Engine 4, C++",
+        "year" => '2018',
+        "smallImage" => "fit-float_80.jpg",
+        "largeImage" => "fit-float.jpg",
+        "link" => "https://play.google.com/store/apps/details?id=com.fittalent.FITFloat&pli=1",
+    ),
+
+    array(
+        "name" => "Conduct Interview",
+        "description" => " Excel tool for conducting interviews",
+        "features" => array(
+            ""
+        ),
+
+        "tech" => "Excel, VBA scripting",
+        "year" => '2012',
+        "smallImage" => "excel-conduct_80.jpg",
+        "largeImage" => "excel-conduct.jpg",
+    ),
+    
+
+    array(
+        "name" => "Registration Solitions",
+        "description" => " Online real time table registration ",
+        "features" => array(
+        ),
+
+        "tech" => "PHP, MySQL, Flex, Flash",
+        "year" => '2006, 2013',
+        "smallImage" => "registration_ca_80.jpg",
+        "largeImage" => "registration_ca.jpg",
+    ),
 
     //2011
     array(
@@ -244,7 +316,7 @@ $portfolioData2 = array(
             ),
     array(
             "name" => "Anita Health Center",
-            "description" => "Website of the health center where I was working as aerobics trainer (in 2009-2012)",
+            "description" => "Website of the health center where I was volunteering as aerobics trainer in 2007-2010",
             "tech" => "HTML, JavaScript",
             "year" => 2010,
             "smallImage" => "ahc_logo.jpg",
