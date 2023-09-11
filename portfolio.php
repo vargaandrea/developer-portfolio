@@ -319,7 +319,7 @@ function compliesToFilter($portfolioData) {
                             <li>Further extension of the .NET Windows Client application</li>
                             <li>Firewall data synchronization - cron job that periodically reads firewall configurations through SSH, 
                                 presents changes to authorised users on a web interface and offers easy data actualization</li>
-                        </ul>4
+                        </ul>
                         <p>
                             <span class="tech">PHP, MySQL, JavaScript, HTML</span>
                         </p>
