@@ -315,10 +315,10 @@ function compliesToFilter($portfolioData) {
                             <li>Report generation system</li>
                             <li>Modernization of the user ínterface</li>
                             <li>Dynamic import of data (based on json configuration) with  file upload, data validation and logging</li>
-                            <li>Further extension, maintenance and bug fixes of the website</li>
-                            <li>Further extension of the .NET Windows Client application</li>
+                            <li>Further extenstion, maintenance and bug fixes of the website</li>
+                            <li>Further extentention of the .NET Windows Client application</li>
                             <li>Firewall data synchronization - cron job that periodically reads firewall configurations through SSH, 
-                                presents changes to authorised users on a web interface and offers easy data actualization</li>
+                                presents changes to authorized users on a web interface and offers easy data actialization</li>
                         </ul>
                         <p>
                             <span class="tech">PHP, MySQL, JavaScript, HTML</span>
@@ -328,7 +328,7 @@ function compliesToFilter($portfolioData) {
                     <div class="widget">
                         <h3>Service Desk Assistant</h3>
                         <p>A tool that intercepts service desk emails, stores all relevant data in a database and distributes the emails 
-                            to online and available technicians. Users can effectively open ServiceNow tickets, reply, forward and archive emails.
+                            to online and available technicians. Users can effectively open ServiceNow tickets, reply, forward and archive emais.
                             Admins can generate Excel Statistics to measure effectiveness.
                         </p>
                         <p>

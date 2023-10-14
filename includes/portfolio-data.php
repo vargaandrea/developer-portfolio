@@ -9,10 +9,6 @@
 
 
 $portfolioData1 = array(
-
-
-    
-
     array(
         "name" => "siesol.de",
         "description" => " Presentation site and online shop of a plant based filter island for ponds (Family project)",
