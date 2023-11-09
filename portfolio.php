@@ -321,28 +321,28 @@ function compliesToFilter($portfolioData) {
                                 presents changes to authorized users on a web interface and offers easy data actialization</li>
                         </ul>
                         <p>
-                            <span class="tech">PHP, MySQL, JavaScript, HTML</span>
+                            <span class="tech">PHP, MariaDB, JavaScript, HTML</span>
                         </p>
                     </div>
 
                     <div class="widget">
                         <h3>Service Desk Assistant</h3>
                         <p>A tool that intercepts service desk emails, stores all relevant data in a database and distributes the emails 
-                            to online and available technicians. Users can effectively open ServiceNow tickets, reply, forward and archive emais.
+                            to online and available technicians. Through a web UI the service desk team can effectively open ServiceNow tickets, reply, forward and archive emails.
                             Admins can generate Excel Statistics to measure effectiveness.
                         </p>
                         <p>
-                            <span class="tech">PHP - Slim, MySQL, JavaScript - Vue.js, HTML</span>
+                            <span class="tech">PHP - Slim, MariaDB, JavaScript - Vue.js, HTML</span>
                         </p>
                     </div>
 
                     <div class="widget">
                         <h3>Ticket System Integration</h3>
                         <p>
-                            synchronizes ticket between Customer and NTT systems <br>
+                            Ticket coupling between customer and NTT IT Service Management Tool <br>
                         </p>
                         <p>
-                            <span class="tech">PHP, MySQL, REST, SOAP, ServiceNow API</span>
+                            <span class="tech">PHP, MariaDB, REST, SOAP, ServiceNow API</span>
                         </p>
                     </div>
 
