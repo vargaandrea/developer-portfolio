@@ -215,8 +215,21 @@ $portfolioData1 = array(
             "largeImage" => "virtualro/virtualro_main.jpg",
             "more" => "virtualro.html",
             "isLarge" => true
-        )
+        ),
 
+    array(
+        "name" => "Registration Solutions",
+        "description" => " Online real time table and booth registration system with complex administration area for defining floorplan elements.",
+
+        "features" => array(
+        ),
+
+        "tech" => "Flex, PHP, MySQL,Flash",
+        "year" => '2006 - v1, 2013 - v2',
+        "smallImage" => "registration_ca_180.jpg",
+        "largeImage" => "registration_ca.jpg",
+        "more" => "registration.html",
+    ),
 
 );
 
@@ -260,19 +273,7 @@ $portfolioData2 = array(
         "smallImage" => "excel-conduct_80.jpg",
         "largeImage" => "excel-conduct.jpg",
     ),
-    
 
-    array(
-        "name" => "Registration Solitions",
-        "description" => " Online real time table registration ",
-        "features" => array(
-        ),
-
-        "tech" => "PHP, MySQL, Flex, Flash",
-        "year" => '2006, 2013',
-        "smallImage" => "registration_ca_80.jpg",
-        "largeImage" => "registration_ca.jpg",
-    ),
 
     //2011
     array(
