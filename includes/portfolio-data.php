@@ -53,7 +53,7 @@ $portfolioData1 = array(
                     "management and conduction of various transforming processes",
                     "various reporting possibilities",
                     "user accounts with various roles and permission levels",
-                    "suport for multiple languages"
+                    "support for multiple languages"
 
                 ),
 
@@ -152,7 +152,7 @@ $portfolioData1 = array(
    
     array(
             "name" => "Motionloops",
-            "description" => "<a href=\"http://www.motionloops.com\">www.motionloops.com</a><br/>Motionloops sells looping video clips for video editing, presentations and live performances. Started in 2006, the project is in constant evolution, including many features",
+            "description" => "<a href=\"https://www.motionloops.com\">www.motionloops.com</a><br/>Motionloops sells looping video clips for video editing, presentations and live performances. Started in 2006, the project is in constant evolution, including many features",
             "features" => array(
                         "integration with Amazon S3 (for video file storage)",
                             "integration with LivePerson",
@@ -163,7 +163,6 @@ $portfolioData1 = array(
                             "administration area for complete content management and reporting (Flash and Flex based user interface),",
                             "automatic generation of complete product catalog in PDF",
                             "email content creation for marketing"
-
                     ),
 
             "tech" => " Flash (ActionScript 2), PHP, HTML, JavaScript, MySQL, Amazon S3",
@@ -237,7 +236,7 @@ $portfolioData1 = array(
 $portfolioData2 = array(
     array(
         "name" => "Steering a blade grinder",
-        "description" => " Stepper motor controlled through a Mobile app connected with Blootuth to Arduino UNO to steer a blade grinder, moving the blades with specific speed on a specific pattern",
+        "description" => " Stepper motor controlled through a Mobile app connected with Bluetooth to Arduino UNO to steer a blade grinder, moving the blades with specific speed on a specific pattern",
         "features" => array(
             ""
         ),
@@ -249,7 +248,7 @@ $portfolioData2 = array(
 
     array(
         "name" => "FIT Float",
-        "description" => " Mobile learning game to teach why some things float and others sink. My responsibilities were to implemnent the logic of the game in UE4 and deployment in Google and Apple stores.",
+        "description" => " Mobile learning game to teach why some things float and others sink. My responsibilities were to implement the logic of the game in UE4 and deployment in Google and Apple stores.",
         "features" => array(
             ""
         ),
@@ -768,6 +767,3 @@ $portfolioData2 = array(
             ),
 
 );
-
-?>
- 

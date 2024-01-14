@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="348cbcc4-be47-4e32-9722-b1f564fb666c" name="Default" comment="small fixes">
-      <change afterPath="$PROJECT_DIR$/portfolio-details/registration.html" afterDir="false" />
+    <list default="true" id="348cbcc4-be47-4e32-9722-b1f564fb666c" name="Default" comment="add registration.ca images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about_me.html" beforeDir="false" afterPath="$PROJECT_DIR$/about_me.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/portfolio-data.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/portfolio-data.php" afterDir="false" />
@@ -730,7 +729,7 @@
       <workItem from="1697302093551" duration="3025000" />
       <workItem from="1699542293751" duration="7652000" />
       <workItem from="1701449594948" duration="1262000" />
-      <workItem from="1705235944201" duration="3447000" />
+      <workItem from="1705235944201" duration="4202000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1407959244228</created>
@@ -937,7 +936,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699542609242</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="small fixes, more registration.ca">
+      <option name="closed" value="true" />
+      <created>1705241392156</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1705241392156</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add registration.ca images">
+      <option name="closed" value="true" />
+      <created>1705241411565</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1705241411565</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1030,8 +1045,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test" />
-    <MESSAGE value="portfolio first import" />
     <MESSAGE value="EC2 -&gt; S3" />
     <MESSAGE value="portfolio with virtualro details" />
     <MESSAGE value="portfolio more sites" />
@@ -1055,7 +1068,9 @@
     <MESSAGE value="fix FIT Talent management tech" />
     <MESSAGE value="fixes" />
     <MESSAGE value="small fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="small fixes" />
+    <MESSAGE value="small fixes, more registration.ca" />
+    <MESSAGE value="add registration.ca images" />
+    <option name="LAST_COMMIT_MESSAGE" value="add registration.ca images" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="antWorkspaceConfiguration">
