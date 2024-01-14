@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="348cbcc4-be47-4e32-9722-b1f564fb666c" name="Default" comment="add registration.ca images">
+    <list default="true" id="348cbcc4-be47-4e32-9722-b1f564fb666c" name="Default" comment="spelling ifxes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about_me.html" beforeDir="false" afterPath="$PROJECT_DIR$/about_me.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/portfolio-data.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/portfolio-data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv-full.html" beforeDir="false" afterPath="$PROJECT_DIR$/cv-full.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-details/fit-talent.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-details/fit-talent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-details/fit-transformation.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-details/fit-transformation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-details/kaderplanung.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-details/kaderplanung.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-details/motionloops.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-details/motionloops.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-details/ppm.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-details/ppm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-details/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-details/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-details/sdg.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-details/sdg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-details/virtualro.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-details/virtualro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio.php" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,6 +316,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -445,7 +458,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/_Works/workspace/developer-portfolio/portfolio-details",
+    "last_opened_file_path": "C:/_Works/workspace/developer-portfolio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -729,7 +742,7 @@
       <workItem from="1697302093551" duration="3025000" />
       <workItem from="1699542293751" duration="7652000" />
       <workItem from="1701449594948" duration="1262000" />
-      <workItem from="1705235944201" duration="4202000" />
+      <workItem from="1705235944201" duration="5380000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1407959244228</created>
@@ -952,7 +965,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705241411565</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="spelling ifxes">
+      <option name="closed" value="true" />
+      <created>1705242282128</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1705242282128</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1045,7 +1066,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="EC2 -&gt; S3" />
     <MESSAGE value="portfolio with virtualro details" />
     <MESSAGE value="portfolio more sites" />
     <MESSAGE value="portfolio changes" />
@@ -1070,7 +1090,8 @@
     <MESSAGE value="small fixes" />
     <MESSAGE value="small fixes, more registration.ca" />
     <MESSAGE value="add registration.ca images" />
-    <option name="LAST_COMMIT_MESSAGE" value="add registration.ca images" />
+    <MESSAGE value="spelling ifxes" />
+    <option name="LAST_COMMIT_MESSAGE" value="spelling ifxes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="antWorkspaceConfiguration">

@@ -363,8 +363,8 @@ function compliesToFilter($portfolioData) {
 
         <div id="mini-footer"></div><!--mini-footer ends-->
 
-        <div id="footer" class="clearfix" style="height: 100">
-            <ul class="social right" style="height: 100">
+        <div id="footer" class="clearfix" >
+            <ul class="social right" >
                 <li><a href="https://www.linkedin.com/in/andrea-varga-software-engineer/"><img alt="linkedin" src="images/social-icons/linkedin_16.png" /></a></li>
             </ul>
             <span>&copy; 2018 <a href="index.html">Andrea Varga</a></span>
